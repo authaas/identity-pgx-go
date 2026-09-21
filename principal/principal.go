@@ -1,5 +1,4 @@
-// Package principal converts a principal between the contract's form, the
-// canonical UUID string on identity.Principal, and pgx's uuid type.
+//revive:disable:package-comments
 package principal
 
 import (
