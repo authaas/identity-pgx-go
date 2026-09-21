@@ -2,26 +2,10 @@
 package principal
 
 import (
-	"errors"
-
 	"github.com/jackc/pgx/v5/pgtype"
 
 	"buf.build/gen/go/authaas/identity/protocolbuffers/go/identity"
 )
-
-// ErrInvalidKey reports a stored key that does not read back as text, which
-// a NOT NULL uuid column never yields.
-var ErrInvalidKey = errors.New("invalid principal key")
-
-// Key answers with the stored form of a principal's id, or the type's own
-// refusal of a value it cannot hold.
-func Key(principal *identity.Principal) (pgtype.UUID, error) {
-	var id pgtype.UUID
-
-	err := id.Scan(principal.GetId())
-
-	return id, err
-}
 
 // FromKey answers with the message for a stored key.
 //
