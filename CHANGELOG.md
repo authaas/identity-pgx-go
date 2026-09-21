@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## 0.2.0 - 2026-09-21
+#### Features
+- fix packaging - (7701b8d) - Nathan Blair
+
+- - -
+
 ## 0.1.1 - 2026-09-21
 #### Bug Fixes
 - CI - (5317994) - Nathan Blair
